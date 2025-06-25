@@ -50,11 +50,28 @@ const users = [
     }
 ]
 
-console.log(users[1].alias)
+// console.log(users[1].alias)
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser)) // gives output as array
-console.log(Object.values(tinderUser)) // gives output as array
+// console.log(Object.keys(tinderUser)) // gives output as array
+// console.log(Object.values(tinderUser)) // gives output as array
 
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+const course = {
+    coursename: "js in hindi",
+    price : "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor 
+
+const {courseInstructor} = course // when we do this we can use this key without reffering to the object name
+// also we can give a diffrent name to the key aswell
+//for eg
+const {coursename : Subject} = course
+
+console.log(courseInstructor);
+console.log(Subject);
+
